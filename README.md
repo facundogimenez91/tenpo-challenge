@@ -68,4 +68,3 @@ En el root del proyecto ejecutar
 docker-compose build app
 docker-compose up app
 ```
->>>>>>> a4673e7 (Initial commit)
