@@ -1,0 +1,25 @@
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      expireTime: 10000
+      keyPrefix: challenge
+percentage:
+  client:
+    mockEnable: true
+    mockFixedValue: 20
+    url: https://tenpochallenge.free.beeceptor.com
+    connectionTimeout: 1000
+    retries: 3
+    retriesDelay: 2000
+service:
+  percentage:
+    ttlInMinutes: 2
+  semaphore:
+    permits: 3
+    acquireTimeoutInSec: 2

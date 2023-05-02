@@ -1,0 +1,119 @@
+{
+  "info": {
+    "_postman_id": "a4185036-a8c9-4ca6-ab1b-d62279ba6de8",
+    "name": "Challenge",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "17240888"
+  },
+  "item": [
+    {
+      "name": "Calculate",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"value1\": 5,\n    \"value2\": 5\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{challengeUrl}}/api/v1/calc",
+          "host": [
+            "{{challengeUrl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "calc"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get records",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/record?size=10&page=1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "record"
+          ],
+          "query": [
+            {
+              "key": "size",
+              "value": "10"
+            },
+            {
+              "key": "page",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get percentage value",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://tenpochallenge.free.beeceptor.com/api/percentage/fixed",
+          "protocol": "https",
+          "host": [
+            "tenpochallenge",
+            "free",
+            "beeceptor",
+            "com"
+          ],
+          "path": [
+            "api",
+            "percentage",
+            "fixed"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "http://localhost:8080",
+      "value": "",
+      "type": "string"
+    }
+  ]
+}
