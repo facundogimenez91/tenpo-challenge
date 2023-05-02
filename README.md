@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-# tenpo-challenge
-Challenge para Tenpo
-=======
+
 # Challenge para Tenpo
 
 ## Stack utilizado:
